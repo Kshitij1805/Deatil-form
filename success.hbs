@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success</title>
+    <style>
+        /* Embedded CSS */
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+            width: 90%;
+            max-width: 500px;
+        }
+
+        .success-message {
+            color: #28a745;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .details {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .person-details {
+            background-color: #e9ecef;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 0 auto;
+            text-align: left;
+            max-width: 80%;
+        }
+
+        .person-details p {
+            margin: 5px 0;
+        }
+
+        .person-details strong {
+            color: #495057;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            font-size: 1em;
+            color: #ffffff;
+            background-color: #007bff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .back-link:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="success-message">Success!</h1>
+        <p class="details">Person Added Successfully:</p>
+        <div class="person-details">
+            <p><strong>Name:</strong> {{name}}</p>
+            <p><strong>Age:</strong> {{age}}</p>
+            <p><strong>City:</strong> {{city}}</p>
+        </div>
+        <a href="/" class="back-link">Back to Home</a>
+    </div>
+</body>
+</html>
